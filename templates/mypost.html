@@ -1,0 +1,35 @@
+<style>
+    body{
+        padding: 20px;
+    }
+    .title{
+        margin-left: 120px;
+    }
+    .body{
+        margin: 20px;
+        padding: 10px;
+        margin-left: 100px;
+        width: 70%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+    button{
+        background-color: rgb(3, 3, 95);
+        color: white;
+        padding: 5px;
+        width: 100px;
+        border-radius: 3px;
+    }
+</style>
+
+<body>
+    <div class="title">
+        <h1>Welcome to My Blog</h1>
+    </div>
+    <div class="body">
+        <h3>{{mypost.title}}</h3>
+        <h5 style="color: gray;">{{mypost.created_at}}</h5>
+        <p>{{mypost.body}}</p>
+        <a href="/"><button>Back Home</button></a>
+    </div>
+</body>
